@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesion en el SIM</title>
+    <link rel="stylesheet" href="./indexStyle.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <main>
+        <section class='form-container'>
+            <h1 class="form_headtext">Ingreso de Usuarios</h1>
+            <br>
+            <form action="./Validaringreso.php" method="post" class="form">
+                <label for="username">
+                    <span class="inputspan">Ingresa tu Usuario para ACRE</span>
+                    <br>
+                    <input type="text" class='textinput'  name="username" required>
+                </label>
+                <br>
+                <label for="password">
+                    <span class="inputspan">Ingresa tu Contraseña</span>
+                    <br>
+                    <input type="password" class='passwordinput'  name="password" required>
+                </label>
+                <br>
+                <input type="submit" value="Iniciar" class='sendbutton'>
+                    
+
+
+
+
+            </form>
+
+        </section>
+    </main>    
+</body>
+</html>

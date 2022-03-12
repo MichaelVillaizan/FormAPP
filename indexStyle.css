@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+
+:root {
+    --main-color:#92a919;
+    --second-color:#2d5525;
+    --gradient-main:linear-gradient(90deg , var(--main-color), var(--second-color));
+    --just-unline-color:#000000;
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+   
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Shippori Antique', sans-serif;
+}
+header{
+    background:linear-gradient(90deg , var(--main-color), var(--second-color));
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: center;
+}
+header div{
+    
+    margin-right: 5%;
+    
+    width: 80%;
+    background-image: url(../img/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+   
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-image: url(./assets/backgrounds/greenmountains.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-container{
+    box-shadow: 0 4px 8px  #000000;
+    min-width: 40vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    background:linear-gradient(90deg , var(--main-color), var(--second-color));
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--second-color);
+    margin-bottom: 17%;
+}
+.form_headtext{
+    font-size: 2rem;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    flex-direction: column;
+    font-size: 1.6rem;
+
+}
+input{ 
+    font-family: 'Shippori Antique', sans-serif;
+    }
+input:focus{
+    width: 100%;
+    outline: none;
+}
+
+.textinput{
+    font-size: 1.4rem;
+    height: 20px;
+    margin-top: 4px;
+    width: 90%;
+    border-style: none;
+    border-bottom: 1px solid var(--just-unline-color) ;
+    border-width: 1px;
+    background: none;
+    transition: 0.5s;
+    
+}
+.textinput:hover{
+    margin-top: 4px;
+    width: 100%;
+    border-style: none;
+    border-bottom: 1px solid var(--just-unline-color) ;
+    border-width: 1px;
+    background: none;
+}
+.passwordinput{
+    font-size: 1.4rem;
+    height: 20px;
+    margin-top: 4px;
+    width: 90%;
+   
+    border-style: none;
+    border-bottom: 1px solid var(--just-unline-color) ;
+    border-width: 1px;
+    background: none;
+    transition: 0.5s;
+    
+}
+.passwordinput:hover{
+    margin-top: 4px;
+    width: 100%;
+   
+    border-style: none;
+    border-bottom: 1px solid var(--just-unline-color) ;
+    border-width: 1px;
+    background: none;
+}
+.sendbutton{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    background-color: #4e6f1b;
+    border-radius: 5px;
+    
+    font-family: 'Shippori Antique', sans-serif;
+    transition: 0.5s;
+
+}
+.sendbutton:hover{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-family: 'Shippori Antique', sans-serif;
+
+}
+.errorac{
+    position: fixed;
+    top: 75%;
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
+}
+
